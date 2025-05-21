@@ -5,7 +5,7 @@ from .routers import posts, users, auth, votes
 from .config import settings
 from fastapi.middleware.cors import CORSMiddleware
 
-print(settings.database_username)
+#print(settings.database_username)
 
 
 #models.Base.metadata.create_all(bind=engine)
@@ -30,4 +30,4 @@ app.include_router(votes.router)
 
 @app.get("/")
 def root():
-    return {"meesage":"Hello world"} 
+    return {"meesage":"Hello world!!!!!!*******"} 

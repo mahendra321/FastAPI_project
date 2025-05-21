@@ -77,7 +77,7 @@ def get_posts(conn = Depends(get_conn)):
 @router.get("/all", response_model=list[schemas.PostOUT])
 #@router.get("/all")
 def test_post(db:Session = Depends(get_db), current_user:int = Depends(oauth2.get_current_user), limit : int = 2, skip : int = 0, search: Optional[str] = ''):
-    print(current_user.user_name)
+    #print(current_user.user_name)
     '''posts=db.query(models.Post).filter(models.Post.owner_id == curent_user.id)''' #this for specific user created posts
     #posts=db.query(models.Post).filter(models.Post.title.contains(search)).limit(limit).offset(skip).all()
 
